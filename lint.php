@@ -2,7 +2,8 @@
 
 /// Validate arguments
 if( ! isset($argv[1]) ) {
-	die("You must provide a filename argument");
+	echo 'You must provide a filename argument';
+	exit(1);
 }
 
 $file = $argv[1];
@@ -18,7 +19,7 @@ if ( 'po' === $parts['extension'] || 'pot' === $parts['extension'] ) {
 
 	if ( false === $result ) {
 		echo 'Invalid localization file';
-		exit(1);
+		exit(2);
 	}
 }
 
