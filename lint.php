@@ -23,4 +23,4 @@ if ( 'po' === $parts['extension'] || 'pot' === $parts['extension'] ) {
 	}
 }
 
-echo 'Localization file is valid';
+echo 'Localization file is valid' . PHP_EOL;
