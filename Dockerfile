@@ -6,3 +6,5 @@ RUN tar -xf wordpress.tar.gz && rm wordpress.tar.gz
 COPY lint.php lint.php
 COPY gplint /bin/gplint
 RUN chmod +x /bin/gplint
+
+RUN apt-get update -y && apt-get install -y gettext
